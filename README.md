@@ -1,6 +1,4 @@
-# zkSnarks_circom_snarkjs
-
-Solidity smart contract created using a zkSnark with public and private inputs.
+# Circom_snarkjs
 
 ## zkSnark and Public Input Signal(s)
 
@@ -36,12 +34,6 @@ You can also manually copy and paste the commands all at once into your terminal
     snarkjs zkey export soliditycalldata public.json proof.json
 
 Note: the output proof can change for the same zkSnark and Solidity smart contract.
-
-## Deployed and zkSnark verified contract
-
-Generated verifier.sol contract using snarkjs [PLONK] deployed and verified on Goerli:
-
-https://goerli.etherscan.io/address/0xa1f170ed7d3f7210a2ccac11b21531921174e7af#code
 
 ## Format proof and inputs for verifier.sol
 
