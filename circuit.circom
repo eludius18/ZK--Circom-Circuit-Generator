@@ -1,10 +1,10 @@
-template Multiplier(n) { //PUBLIC INPUT ARG
-    signal input a; //PRIVATE INPUT
-    signal input b; //PRIVATE INPUT
-    signal input c; //PRIVATE INPUT
-    signal output d; //PUBLIC OUTPUT
+pragma circom 2.0.0;
 
-    d <== a*b*d*n; //OUTPUT PROOF
-}
+template Multiplier2() {
+    signal input a;
+    signal input b;
+    signal output c;
+    c <== a*b;
+ }
 
-component main = Multiplier(1000); //PUBLIC INPUT FROM MAIN FUNCTION CALL
+ component main = Multiplier2();

@@ -12,6 +12,32 @@
 
     input.json
 
+## Ceremony before a circuit
+
+# Using Circom
+
+1. Install Circom and snarksjs
+
+```shell
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+npm install -g snarkjs
+```
+
+2. Download Circom Repo
+
+```shell
+git clone https://github.com/iden3/circom.git
+```
+
+3. Download Circom Repo
+
+```shell
+cd circom
+cargo build --release
+cargo install --path circom
+```
+
+
 ## Generate verifier.sol along with proof and inputs
 
 After setting up a ceremony before a circuit, run the following to generate contract and proof in directory console:
