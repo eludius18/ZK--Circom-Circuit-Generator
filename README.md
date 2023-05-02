@@ -71,6 +71,18 @@ Formats the outputs for ```proof``` and ```pubSignals``` from:
 
 https://lingojam.com/TexttoOneLine
 
+## Check the verification key to see if it is valid for the proof
+
+```shell
+snarkjs zkey verify circuit.r1cs pot12_final.ptau circuit_final.zkey
+```
+
+## Check if the proof, the public value, and the verification, and prove are valid
+
+```shell
+snarkjs groth16 verify verification_key.json public.json proof.json
+```
+
 ## Reference:
 
 https://github.com/iden3/snarkjs
